@@ -21,23 +21,18 @@ X = df1.drop(["direction"], axis=1)
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.10)
 
-## Training the Data
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier
-classifier = DecisionTreeClassifier()
-classifier2 = RandomForestClassifier()
+## Training the Data with decision trees and random forest
+from sklearn.linear_model import LogisticRegression
+
+classifier = LogisticRegression(penalty='l1')
 
 classifier.fit(X_train, y_train)
-classifier2.fit(X_train, y_train)
 
 ## Making the actual prediciton
 y_pred = classifier.predict(X_test)
-y_pred2 = classifier2.predict(X_test)
 
 ## Some elementary diagnostics, pretty good results!
 from sklearn.metrics import classification_report, confusion_matrix
 
 print(confusion_matrix(y_test, y_pred))
 print(classification_report(y_test, y_pred))
-print(confusion_matrix(y_test,y_pred2))
-print(classification_report(y_test,y_pred2))
