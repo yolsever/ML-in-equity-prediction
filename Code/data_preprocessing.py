@@ -2,8 +2,7 @@ import numpy as np
 import pandas as pd
 
 df = pd.read_csv("..//"+"Data//"+"initial_dataset.csv", engine='python')
-df = pd.get_dummies(df, columns=["gsector", "ggroup","gind", "gsector", "gsubind", "gvkey","tic", "gvkey"])
-print(df.describe)
+df = pd.get_dummies(df, columns=["gsector", "ggroup","gind", "gsector", "gsubind", "gvkey", "gvkey"])
 df = df.drop("iid",axis=1)
 
 
@@ -11,24 +10,23 @@ df = df.drop("iid",axis=1)
 ## We can use the same code for other time periods of course
 dependantclose = df['prccd'].diff()
 newdf = pd.DataFrame(dependantclose)
-newdf.loc[newdf['prccd'] < 0, "direction"] = 0 
+newdf.loc[newdf['prccd'] < 0, "direction"] = 0
 newdf.loc[newdf['prccd'] > 0, "direction"] = 1
 df = pd.concat([df, newdf['direction']], axis=1, sort=False)
 
 
 ## This code splits the dataset above into datasets sorted by company and saves them
 stocklist = pd.unique(df['tic'])
-for i in stocklist: 
+for i in stocklist:
     df1 = df[df['tic'] == i]
-    # df1.to_csv(i)
+    df1.to_csv('..\\Data\\Stockdata\\' + i + ".csv")
 
 ## Loading company level Data (access all company strings in the list "stocklist")
 ## Also important to drop the first row! I'll explain why
 
-df1 = pd.read_csv("..//"+"Data//"+"Stockdata//"+"GOOGL")
+df1 = pd.read_csv("..//"+"Data//"+"Stockdata//"+"GOOGL.csv")
 df1.drop(df.index[0])
-
-
+df1.rename(columns={'prccd':'Close', 'prchd':'High', 'prcld':'Low','cshtrd':'Volume'}, inplace=True)
 ## ADDING TECHNICAL INDICATORS
 
 from technicalindicators import *
@@ -36,7 +34,7 @@ from technicalindicators import *
 
 def technical(df1):
     df = df1
-    
+
     T = [5,15,30,60]
     for i in T:
         df = moving_average(df,i)
@@ -55,14 +53,14 @@ def technical(df1):
         df = keltner_channel(df, i)
         df = donchian_channel(df, i)
         df = standard_deviation(df, i)
-    
-    J = [5,15,30]    
+
+    J = [5,15,30]
     for i in J:
         df = bollinger_bands(df, i)
         df = stochastic_oscillator_d(df, i)
         df = trix(df, i)
         df = accumulation_distribution(df, i)
-        
+
     ## Time independant
     df = ppsr(df)
     df = stochastic_oscillator_k(df)
@@ -70,8 +68,9 @@ def technical(df1):
     df = chaikin_oscillator(df)
     df = ultimate_oscillator(df)
     return df
-  
-    
-    
-#df = moving_average(df1,5)
+
 df = technical(df1)
+df.drop(df.index[:60], inplace=True) # Drop coz of lags
+df.drop(['Close','High', 'Low'], axis=1, inplace= True) # And whatever is related to the price data we have today
+
+df.to_csv("..\\Data\\Stockdata\\GOOGL_edit.csv")
