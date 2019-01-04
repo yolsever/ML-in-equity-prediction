@@ -27,3 +27,51 @@ for i in stocklist:
 
 df1 = pd.read_csv("..//"+"Data//"+"Stockdata//"+"GOOGL")
 df1.drop(df.index[0])
+
+
+## ADDING TECHNICAL INDICATORS
+
+from technicalindicators import *
+
+
+def technical(df1):
+    df = df1
+    
+    T = [5,15,30,60]
+    for i in T:
+        df = moving_average(df,i)
+        df = exponential_moving_average(df,i)
+        df = momentum(df,i)
+        df = rate_of_change(df, i)
+        df = average_true_range(df,i)
+        df = vortex_indicator(df, i)
+        df = relative_strength_index(df, i)
+        df = money_flow_index(df, i)
+        df = on_balance_volume(df, i)
+        df = force_index(df, i)
+        df = ease_of_movement(df, i)
+        df = commodity_channel_index(df, i)
+        df = coppock_curve(df, i)
+        df = keltner_channel(df, i)
+        df = donchian_channel(df, i)
+        df = standard_deviation(df, i)
+    
+    J = [5,15,30]    
+    for i in J:
+        df = bollinger_bands(df, i)
+        df = stochastic_oscillator_d(df, i)
+        df = trix(df, i)
+        df = accumulation_distribution(df, i)
+        
+    ## Time independant
+    df = ppsr(df)
+    df = stochastic_oscillator_k(df)
+    df = mass_index(df)
+    df = chaikin_oscillator(df)
+    df = ultimate_oscillator(df)
+    return df
+  
+    
+    
+#df = moving_average(df1,5)
+df = technical(df1)
