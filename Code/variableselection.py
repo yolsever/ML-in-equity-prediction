@@ -13,26 +13,38 @@ df1.drop(df1.index[0])
 #df1 = df1.reset_index()
 df1 = df1.drop(["capgn","spcseccd","incorp","spcsrc", "idbflag", "tic", "prccd", "prchd", "prcld", "prcod"],axis=1)
 df1 = df1.dropna()
-y = df1['direction']
-X = df1.drop(["direction"], axis=1)
-## Making test splits: Test size is how much of the data we use as training data
-from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.10)
 
-## Training the Data with decision trees and random forest
-from sklearn.linear_model import LogisticRegression
+from sklearn.feature_selection import SelectFromModel
+from sklearn.linear_model import LassoCV
 
-classifier = LogisticRegression(penalty='l1')
+X, y = df1.drop(["direction"], axis=1), df1['direction']
 
-classifier.fit(X_train, y_train)
+# We use the base estimator LassoCV since the L1 norm promotes sparsity of features.
+clf = LassoCV(cv=5)
 
-## Making the actual prediciton
-y_pred = classifier.predict(X_test)
+# Set a minimum threshold of 0.25
+sfm = SelectFromModel(clf, threshold=0.25)
+sfm.fit(X, y)
+n_features = sfm.transform(X).shape[1]
 
-## Some elementary diagnostics, pretty good results!
-from sklearn.metrics import classification_report, confusion_matrix
-
-print(confusion_matrix(y_test, y_pred))
-print(classification_report(y_test, y_pred))
+# Reset the threshold till the number of features equals two.
+# Note that the attribute can be set directly instead of repeatedly
+# fitting the metatransformer.
+while n_features > 2:
+    sfm.threshold += 0.1
+    X_transform = sfm.transform(X)
+    n_features = X_transform.shape[1]
+    
+    
+plt.title(
+    "Features selected using SelectFromModel with "
+    "threshold %0.3f." % sfm.threshold)
+feature1 = X_transform[:, 0]
+feature2 = X_transform[:, 1]
+plt.plot(feature1, feature2, 'r.')
+plt.xlabel("Feature number 1")
+plt.ylabel("Feature number 2")
+plt.ylim([np.min(feature2), np.max(feature2)])
+plt.show()
 
 
