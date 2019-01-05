@@ -1,0 +1,14 @@
+## Open Issues data processing
+
+1. We need to clean the raw data by:
+    - renaming variables appropriatly
+    - Creating dummies
+    - create direction variable
+
+2. Split data:
+    - We need to split data by company (obviously)
+    - THEN apply the technical indicators! (In the stacked raw version we will get spilover for the first few observations) 
+    - clean data: remove strings like ticker, close, high etc.
+    - Save the data appropriately
+    
+the main problem occurs while looping through all the companies and applying the technical() function in the loop
