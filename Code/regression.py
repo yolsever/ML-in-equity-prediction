@@ -6,14 +6,15 @@ import pandas as pd
 ## Loading company level Data (access all company strings in the list "stocklist")
 ## Also important to drop the first row! I'll explain why
 
-df1 = pd.read_csv("..//"+"Data//"+"Stockdata//"+"GOOGL_edit")
+df1 = pd.read_csv("..//"+"Data//"+"Stockdata//"+"GOOGL_edit.csv")
 # df1.drop(df1.index[0])
 
 ## Bunch of transformations also defining covariates and dependant variables
-#df1 = pd.get_dummies(df1, columns=["gsector", "ggroup","gind", "gsector", "gsubind", "gvkey","tic", "gvkey", "spcsrc", "incorp", "idbflag"])
+df1 = pd.get_dummies(df1, columns=["gsector", "ggroup","gind", "gsector", "gsubind", "gvkey","tic", "gvkey", "spcsrc", "incorp", "idbflag"])
 #df1 = df1.reset_index()
-#df1 = df1.drop(["capgn","spcseccd","",""],axis=1)
+df1 = df1.drop(["capgn","spcseccd"],axis=1)
 df1 = df1.dropna()
+print(df1)
 y = df1['direction']
 X = df1.drop(["direction"], axis=1)
 ## Making test splits: Test size is how much of the data we use as training data
