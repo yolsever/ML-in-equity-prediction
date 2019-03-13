@@ -1,0 +1,170 @@
+/usr/local/lib/python3.6/dist-packages/sklearn/externals/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+/usr/local/lib/python3.6/dist-packages/sklearn/model_selection/_search.py:841: DeprecationWarning: The default of the `iid` parameter will change from True to False in version 0.22 and will be removed in 0.24. This will change numeric results when test-set sizes are unequal.
+  DeprecationWarning)
+Restoring model weights from the end of the best epoch
+Epoch 00524: early stopping
+Best: -0.020734 using {'init_neurons': 48, 'learn': 0.001, 'n_layers': 4}
+-0.020990 (0.008800) with: {'init_neurons': 16, 'learn': 0.1, 'n_layers': 1}
+-0.020905 (0.008673) with: {'init_neurons': 16, 'learn': 0.1, 'n_layers': 2}
+-0.020822 (0.008750) with: {'init_neurons': 16, 'learn': 0.1, 'n_layers': 3}
+-0.020797 (0.008780) with: {'init_neurons': 16, 'learn': 0.1, 'n_layers': 4}
+-0.020787 (0.008816) with: {'init_neurons': 16, 'learn': 0.01, 'n_layers': 1}
+-0.020790 (0.008787) with: {'init_neurons': 16, 'learn': 0.01, 'n_layers': 2}
+-0.020791 (0.008785) with: {'init_neurons': 16, 'learn': 0.01, 'n_layers': 3}
+-0.020785 (0.008794) with: {'init_neurons': 16, 'learn': 0.01, 'n_layers': 4}
+-0.044912 (0.022866) with: {'init_neurons': 16, 'learn': 0.001, 'n_layers': 1}
+-0.021538 (0.007830) with: {'init_neurons': 16, 'learn': 0.001, 'n_layers': 2}
+-0.020743 (0.008834) with: {'init_neurons': 16, 'learn': 0.001, 'n_layers': 3}
+-0.020777 (0.008893) with: {'init_neurons': 16, 'learn': 0.001, 'n_layers': 4}
+-0.020897 (0.008784) with: {'init_neurons': 32, 'learn': 0.1, 'n_layers': 1}
+-0.020772 (0.008826) with: {'init_neurons': 32, 'learn': 0.1, 'n_layers': 2}
+-0.020823 (0.008752) with: {'init_neurons': 32, 'learn': 0.1, 'n_layers': 3}
+-0.020811 (0.008772) with: {'init_neurons': 32, 'learn': 0.1, 'n_layers': 4}
+-0.020773 (0.008854) with: {'init_neurons': 32, 'learn': 0.01, 'n_layers': 1}
+-0.020778 (0.008806) with: {'init_neurons': 32, 'learn': 0.01, 'n_layers': 2}
+-0.020798 (0.008786) with: {'init_neurons': 32, 'learn': 0.01, 'n_layers': 3}
+-0.020789 (0.008792) with: {'init_neurons': 32, 'learn': 0.01, 'n_layers': 4}
+-0.047867 (0.018794) with: {'init_neurons': 32, 'learn': 0.001, 'n_layers': 1}
+-0.020882 (0.008668) with: {'init_neurons': 32, 'learn': 0.001, 'n_layers': 2}
+-0.020757 (0.008827) with: {'init_neurons': 32, 'learn': 0.001, 'n_layers': 3}
+-0.020783 (0.008904) with: {'init_neurons': 32, 'learn': 0.001, 'n_layers': 4}
+-0.020962 (0.008736) with: {'init_neurons': 48, 'learn': 0.1, 'n_layers': 1}
+-0.020822 (0.008760) with: {'init_neurons': 48, 'learn': 0.1, 'n_layers': 2}
+-0.020792 (0.008790) with: {'init_neurons': 48, 'learn': 0.1, 'n_layers': 3}
+-0.020810 (0.008782) with: {'init_neurons': 48, 'learn': 0.1, 'n_layers': 4}
+-0.020768 (0.008859) with: {'init_neurons': 48, 'learn': 0.01, 'n_layers': 1}
+-0.020795 (0.008788) with: {'init_neurons': 48, 'learn': 0.01, 'n_layers': 2}
+-0.020790 (0.008795) with: {'init_neurons': 48, 'learn': 0.01, 'n_layers': 3}
+-0.020784 (0.008792) with: {'init_neurons': 48, 'learn': 0.01, 'n_layers': 4}
+-0.046997 (0.016643) with: {'init_neurons': 48, 'learn': 0.001, 'n_layers': 1}
+-0.021925 (0.007349) with: {'init_neurons': 48, 'learn': 0.001, 'n_layers': 2}
+-0.020769 (0.008815) with: {'init_neurons': 48, 'learn': 0.001, 'n_layers': 3}
+-0.020734 (0.008848) with: {'init_neurons': 48, 'learn': 0.001, 'n_layers': 4}
+/usr/local/lib/python3.6/dist-packages/sklearn/externals/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+Restoring model weights from the end of the best epoch
+Epoch 00597: early stopping
+Best: -0.020740 using {'init_neurons': 16, 'learn': 0.001, 'n_layers': 4}
+-0.021420 (0.008021) with: {'init_neurons': 16, 'learn': 0.1, 'n_layers': 1}
+-0.020862 (0.008783) with: {'init_neurons': 16, 'learn': 0.1, 'n_layers': 2}
+-0.020829 (0.008762) with: {'init_neurons': 16, 'learn': 0.1, 'n_layers': 3}
+-0.020810 (0.008774) with: {'init_neurons': 16, 'learn': 0.1, 'n_layers': 4}
+-0.020811 (0.008766) with: {'init_neurons': 16, 'learn': 0.01, 'n_layers': 1}
+-0.020788 (0.008792) with: {'init_neurons': 16, 'learn': 0.01, 'n_layers': 2}
+-0.020791 (0.008789) with: {'init_neurons': 16, 'learn': 0.01, 'n_layers': 3}
+-0.020790 (0.008794) with: {'init_neurons': 16, 'learn': 0.01, 'n_layers': 4}
+-0.046192 (0.007062) with: {'init_neurons': 16, 'learn': 0.001, 'n_layers': 1}
+-0.020783 (0.008795) with: {'init_neurons': 16, 'learn': 0.001, 'n_layers': 2}
+-0.020763 (0.008821) with: {'init_neurons': 16, 'learn': 0.001, 'n_layers': 3}
+-0.020740 (0.008847) with: {'init_neurons': 16, 'learn': 0.001, 'n_layers': 4}
+-0.021131 (0.008617) with: {'init_neurons': 32, 'learn': 0.1, 'n_layers': 1}
+-0.020800 (0.008789) with: {'init_neurons': 32, 'learn': 0.1, 'n_layers': 2}
+-0.020813 (0.008785) with: {'init_neurons': 32, 'learn': 0.1, 'n_layers': 3}
+-0.020823 (0.008764) with: {'init_neurons': 32, 'learn': 0.1, 'n_layers': 4}
+-0.020866 (0.008833) with: {'init_neurons': 32, 'learn': 0.01, 'n_layers': 1}
+-0.020779 (0.008801) with: {'init_neurons': 32, 'learn': 0.01, 'n_layers': 2}
+-0.020793 (0.008793) with: {'init_neurons': 32, 'learn': 0.01, 'n_layers': 3}
+-0.020783 (0.008788) with: {'init_neurons': 32, 'learn': 0.01, 'n_layers': 4}
+-0.055369 (0.016178) with: {'init_neurons': 32, 'learn': 0.001, 'n_layers': 1}
+-0.022141 (0.007081) with: {'init_neurons': 32, 'learn': 0.001, 'n_layers': 2}
+-0.020768 (0.008817) with: {'init_neurons': 32, 'learn': 0.001, 'n_layers': 3}
+-0.020750 (0.008863) with: {'init_neurons': 32, 'learn': 0.001, 'n_layers': 4}
+-0.021129 (0.008448) with: {'init_neurons': 48, 'learn': 0.1, 'n_layers': 1}
+-0.021017 (0.008549) with: {'init_neurons': 48, 'learn': 0.1, 'n_layers': 2}
+-0.020856 (0.008785) with: {'init_neurons': 48, 'learn': 0.1, 'n_layers': 3}
+-0.020850 (0.008742) with: {'init_neurons': 48, 'learn': 0.1, 'n_layers': 4}
+-0.020816 (0.008802) with: {'init_neurons': 48, 'learn': 0.01, 'n_layers': 1}
+-0.020796 (0.008790) with: {'init_neurons': 48, 'learn': 0.01, 'n_layers': 2}
+-0.020789 (0.008789) with: {'init_neurons': 48, 'learn': 0.01, 'n_layers': 3}
+-0.020811 (0.008800) with: {'init_neurons': 48, 'learn': 0.01, 'n_layers': 4}
+-0.054876 (0.012005) with: {'init_neurons': 48, 'learn': 0.001, 'n_layers': 1}
+-0.022128 (0.007099) with: {'init_neurons': 48, 'learn': 0.001, 'n_layers': 2}
+-0.020755 (0.008820) with: {'init_neurons': 48, 'learn': 0.001, 'n_layers': 3}
+-0.020760 (0.008873) with: {'init_neurons': 48, 'learn': 0.001, 'n_layers': 4}
+/usr/local/lib/python3.6/dist-packages/sklearn/externals/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+/usr/local/lib/python3.6/dist-packages/sklearn/externals/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+/usr/local/lib/python3.6/dist-packages/sklearn/model_selection/_search.py:841: DeprecationWarning: The default of the `iid` parameter will change from True to False in version 0.22 and will be removed in 0.24. This will change numeric results when test-set sizes are unequal.
+  DeprecationWarning)
+Restoring model weights from the end of the best epoch
+Epoch 00524: early stopping
+Best: -0.020734 using {'init_neurons': 48, 'learn': 0.001, 'n_layers': 4}
+-0.020990 (0.008800) with: {'init_neurons': 16, 'learn': 0.1, 'n_layers': 1}
+-0.020905 (0.008673) with: {'init_neurons': 16, 'learn': 0.1, 'n_layers': 2}
+-0.020822 (0.008750) with: {'init_neurons': 16, 'learn': 0.1, 'n_layers': 3}
+-0.020797 (0.008780) with: {'init_neurons': 16, 'learn': 0.1, 'n_layers': 4}
+-0.020787 (0.008816) with: {'init_neurons': 16, 'learn': 0.01, 'n_layers': 1}
+-0.020790 (0.008787) with: {'init_neurons': 16, 'learn': 0.01, 'n_layers': 2}
+-0.020791 (0.008785) with: {'init_neurons': 16, 'learn': 0.01, 'n_layers': 3}
+-0.020785 (0.008794) with: {'init_neurons': 16, 'learn': 0.01, 'n_layers': 4}
+-0.044912 (0.022866) with: {'init_neurons': 16, 'learn': 0.001, 'n_layers': 1}
+-0.021538 (0.007830) with: {'init_neurons': 16, 'learn': 0.001, 'n_layers': 2}
+-0.020743 (0.008834) with: {'init_neurons': 16, 'learn': 0.001, 'n_layers': 3}
+-0.020777 (0.008893) with: {'init_neurons': 16, 'learn': 0.001, 'n_layers': 4}
+-0.020897 (0.008784) with: {'init_neurons': 32, 'learn': 0.1, 'n_layers': 1}
+-0.020772 (0.008826) with: {'init_neurons': 32, 'learn': 0.1, 'n_layers': 2}
+-0.020823 (0.008752) with: {'init_neurons': 32, 'learn': 0.1, 'n_layers': 3}
+-0.020811 (0.008772) with: {'init_neurons': 32, 'learn': 0.1, 'n_layers': 4}
+-0.020773 (0.008854) with: {'init_neurons': 32, 'learn': 0.01, 'n_layers': 1}
+-0.020778 (0.008806) with: {'init_neurons': 32, 'learn': 0.01, 'n_layers': 2}
+-0.020798 (0.008786) with: {'init_neurons': 32, 'learn': 0.01, 'n_layers': 3}
+-0.020789 (0.008792) with: {'init_neurons': 32, 'learn': 0.01, 'n_layers': 4}
+-0.047867 (0.018794) with: {'init_neurons': 32, 'learn': 0.001, 'n_layers': 1}
+-0.020882 (0.008668) with: {'init_neurons': 32, 'learn': 0.001, 'n_layers': 2}
+-0.020757 (0.008827) with: {'init_neurons': 32, 'learn': 0.001, 'n_layers': 3}
+-0.020783 (0.008904) with: {'init_neurons': 32, 'learn': 0.001, 'n_layers': 4}
+-0.020962 (0.008736) with: {'init_neurons': 48, 'learn': 0.1, 'n_layers': 1}
+-0.020822 (0.008760) with: {'init_neurons': 48, 'learn': 0.1, 'n_layers': 2}
+-0.020792 (0.008790) with: {'init_neurons': 48, 'learn': 0.1, 'n_layers': 3}
+-0.020810 (0.008782) with: {'init_neurons': 48, 'learn': 0.1, 'n_layers': 4}
+-0.020768 (0.008859) with: {'init_neurons': 48, 'learn': 0.01, 'n_layers': 1}
+-0.020795 (0.008788) with: {'init_neurons': 48, 'learn': 0.01, 'n_layers': 2}
+-0.020790 (0.008795) with: {'init_neurons': 48, 'learn': 0.01, 'n_layers': 3}
+-0.020784 (0.008792) with: {'init_neurons': 48, 'learn': 0.01, 'n_layers': 4}
+-0.046997 (0.016643) with: {'init_neurons': 48, 'learn': 0.001, 'n_layers': 1}
+-0.021925 (0.007349) with: {'init_neurons': 48, 'learn': 0.001, 'n_layers': 2}
+-0.020769 (0.008815) with: {'init_neurons': 48, 'learn': 0.001, 'n_layers': 3}
+-0.020734 (0.008848) with: {'init_neurons': 48, 'learn': 0.001, 'n_layers': 4}
+/usr/local/lib/python3.6/dist-packages/sklearn/externals/joblib/externals/loky/process_executor.py:706: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  "timeout or by a memory leak.", UserWarning
+Restoring model weights from the end of the best epoch
+Epoch 00597: early stopping
+Best: -0.020740 using {'init_neurons': 16, 'learn': 0.001, 'n_layers': 4}
+-0.021420 (0.008021) with: {'init_neurons': 16, 'learn': 0.1, 'n_layers': 1}
+-0.020862 (0.008783) with: {'init_neurons': 16, 'learn': 0.1, 'n_layers': 2}
+-0.020829 (0.008762) with: {'init_neurons': 16, 'learn': 0.1, 'n_layers': 3}
+-0.020810 (0.008774) with: {'init_neurons': 16, 'learn': 0.1, 'n_layers': 4}
+-0.020811 (0.008766) with: {'init_neurons': 16, 'learn': 0.01, 'n_layers': 1}
+-0.020788 (0.008792) with: {'init_neurons': 16, 'learn': 0.01, 'n_layers': 2}
+-0.020791 (0.008789) with: {'init_neurons': 16, 'learn': 0.01, 'n_layers': 3}
+-0.020790 (0.008794) with: {'init_neurons': 16, 'learn': 0.01, 'n_layers': 4}
+-0.046192 (0.007062) with: {'init_neurons': 16, 'learn': 0.001, 'n_layers': 1}
+-0.020783 (0.008795) with: {'init_neurons': 16, 'learn': 0.001, 'n_layers': 2}
+-0.020763 (0.008821) with: {'init_neurons': 16, 'learn': 0.001, 'n_layers': 3}
+-0.020740 (0.008847) with: {'init_neurons': 16, 'learn': 0.001, 'n_layers': 4}
+-0.021131 (0.008617) with: {'init_neurons': 32, 'learn': 0.1, 'n_layers': 1}
+-0.020800 (0.008789) with: {'init_neurons': 32, 'learn': 0.1, 'n_layers': 2}
+-0.020813 (0.008785) with: {'init_neurons': 32, 'learn': 0.1, 'n_layers': 3}
+-0.020823 (0.008764) with: {'init_neurons': 32, 'learn': 0.1, 'n_layers': 4}
+-0.020866 (0.008833) with: {'init_neurons': 32, 'learn': 0.01, 'n_layers': 1}
+-0.020779 (0.008801) with: {'init_neurons': 32, 'learn': 0.01, 'n_layers': 2}
+-0.020793 (0.008793) with: {'init_neurons': 32, 'learn': 0.01, 'n_layers': 3}
+-0.020783 (0.008788) with: {'init_neurons': 32, 'learn': 0.01, 'n_layers': 4}
+-0.055369 (0.016178) with: {'init_neurons': 32, 'learn': 0.001, 'n_layers': 1}
+-0.022141 (0.007081) with: {'init_neurons': 32, 'learn': 0.001, 'n_layers': 2}
+-0.020768 (0.008817) with: {'init_neurons': 32, 'learn': 0.001, 'n_layers': 3}
+-0.020750 (0.008863) with: {'init_neurons': 32, 'learn': 0.001, 'n_layers': 4}
+-0.021129 (0.008448) with: {'init_neurons': 48, 'learn': 0.1, 'n_layers': 1}
+-0.021017 (0.008549) with: {'init_neurons': 48, 'learn': 0.1, 'n_layers': 2}
+-0.020856 (0.008785) with: {'init_neurons': 48, 'learn': 0.1, 'n_layers': 3}
+-0.020850 (0.008742) with: {'init_neurons': 48, 'learn': 0.1, 'n_layers': 4}
+-0.020816 (0.008802) with: {'init_neurons': 48, 'learn': 0.01, 'n_layers': 1}
+-0.020796 (0.008790) with: {'init_neurons': 48, 'learn': 0.01, 'n_layers': 2}
+-0.020789 (0.008789) with: {'init_neurons': 48, 'learn': 0.01, 'n_layers': 3}
+-0.020811 (0.008800) with: {'init_neurons': 48, 'learn': 0.01, 'n_layers': 4}
+-0.054876 (0.012005) with: {'init_neurons': 48, 'learn': 0.001, 'n_layers': 1}
+-0.022128 (0.007099) with: {'init_neurons': 48, 'learn': 0.001, 'n_layers': 2}
+-0.020755 (0.008820) with: {'init_neurons': 48, 'learn': 0.001, 'n_layers': 3}
+-0.020760 (0.008873) with: {'init_neurons': 48, 'learn': 0.001, 'n_layers': 4}
